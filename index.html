@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes | Home</title>
+    <link rel="Copy icon" href="https://brandeps.com/icon-download/C/Code-icon-vector-07.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    
+</head>
+
+
+<body>
+    <nav>
+        
+        <span class="logo"><a href="/index.html"><img src="copy.png" alt=""></a></span>
+        <div class="content center">
+            Website my Brodevil to Dump & share source code | Copy here
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li>
+                <b> First code :</b><br> Just to store in Brodevil's Website for testing | Normal syntax of HTML and its few tags.
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Example testing syntax&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            background-image: url('yaha pr image ka url yahi path dalo to image batground me acche se aa jayega');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    &lt;/style&gt;
+    
+&lt;/head&gt;
+
+&lt;body bgcolor="cyan"&gt;
+
+    &lt;p align="center"&gt;Hello this is paragram tab and instke aner meneek attribut use kiya hia jo kya karta hia malub hai
+        center ya kahi bhi jana man karehumarea vala dal sakta hai bhai&lt;/p&gt;&lt;br&gt;&lt;br&gt;
+    &lt;b&gt;This text is bold&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+    &lt;i&gt;This text is italic&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+    &lt;mark&gt;This text is marked&lt;/mark&gt;&lt;br&gt;&lt;br&gt;
+    This is &lt;sub&gt;subscript&lt;/sub&gt;and&lt;sup&gt;superscript&lt;/sup&gt;&lt;br&gt;&lt;br&gt;
+    &lt;ins&gt; This text is inserted to the document&lt;/ins&gt;&lt;br&gt;&lt;br&gt;
+    &lt;u&gt;This is also same as insert its making the line okay&lt;/u&gt;&lt;br&gt;&lt;br&gt;
+    &lt;del&gt; This text is deleted from the document &lt;/del&gt;&lt;br&gt;&lt;br&gt;
+
+
+    &lt;h1 align="center"&gt;Heading level 1 text is largesr in size
+        &lt;/h1&gt;&lt;h2 align="right"&gt;Heading level 2&lt;/h2&gt;
+        &lt;h3 align="center"&gt;Heading level 3&lt;/h3&gt;
+        &lt;h4 align="right"&gt;Heading level 4&lt;/h4&gt;
+        &lt;h5&gt;Heading level 5&lt;/h5&gt;
+        &lt;h6&gt;heading level 6 Text is smallest in size&lt;/h6&gt;
+
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+                        
+                    </code>
+                </pre>
+                <br>
+            </li>
+
+            <li>
+                <b>Python Spam :</b><br>Program to just spam as much we want. Just for fun
+                <pre class="language-py"><code>import pyautogui
+import time
+
+s = 0
+data = input("Enter the sentance which you want to spam :\t")
+times = int(input("Enter The number or times you want to spam: \t"))
+if times > 500:
+	conform = input(f"Make sure this is a very big number this will spam more are you conform to spame {times} times Enter [y/n] :\t")
+	if conform.lower() == "y":
+		print("Make sure that you have 10 sec. Put your coursor where you want to spam Okay")
+		time.sleep(13)
+		while s <= times:
+		    pyautogui.typewrite(data)
+		    pyautogui.press("enter")
+		    s += 1
+	else:
+		print("Okay you had conform that you want to quite :\t")
+else:
+	print("Make sure that you have 10 sec. Put your coursor where you want to spam Okay")
+	time.sleep(13)
+	while s <= times:
+	    pyautogui.typewrite(data)
+	    pyautogui.press("enter")
+	    s += 1
+	   
+
+                </code>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>HTML Boilerplate:</b>
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+                </code></pre>
+            </li>
+            <br>
+            <li>
+                <b>This Website CSS source code :</b>
+                <pre class="language-css"><code>*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272822;
+    color: white;
+    height: 72px;
+}
+
+.content{
+    font-family: 'Potta One', cursive;
+}
+
+.container{
+    /* background-color: red; */
+    width: 50vw;
+    padding: 32px 0;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.logo{
+    padding: 0 13px;
+}
+
+.logo img{
+    width: 32px;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+}
+
+                </code></pre>
+            </li>
+            <br>
+            <li><b>Brodevil's basic Discord API Bot using Python :</b>
+                <pre class="language-py"><code>import logging
+import discord
+import asyncio
+from discord.ext import commands
+import requests
+import pickle
+import json
+import random
+import os
+
+
+
+
+logger = logging.getLogger('discord')
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
+
+
+def search(obj, from_obj):
+    for i in obj:
+        for j in from_obj:
+            if i.lower() == j.lower():
+                return True
+                break
+    else:
+        return False
+
+
+client = discord.Client
+
+intents = discord.Intents.default()
+intents.members = True
+
+description = """Just a practise bot and usind this fram work of discord.py"""
+bot = commands.Bot(command_prefix="!", description=description, intents=intents)
+
+bad_words = [
+    "fuck",
+    "bats",
+    "bloody"
+]
+
+
+
+@bot.event
+async def on_ready():
+    print('Logged on as {0}!'.format(bot.user))
+    print("-"*50)
+    dev_log = bot.get_channel(id=816986111539937320)
+    await dev_log.send(f">>> :Python~1: Python Bot \nConnected!")
+
+
+@bot.event
+async def on_message(message):
+    if message.author == client.user:
+        return 0
+
+    print('Message from {0.author}: {0.content} from the channel {0.channel} in the server {0.guild.name}'.format(message))
+
+    
+        
+    if message.content.startswith("!hello"):
+        await message.channel.send(f">>> **Hello!**   {message.author.mention}\nI am Python bot\nI am here to assist the server members, Since Best I can, \n24 Hourse a day, 7 Days a week. I try to being online and help the server members.")
+    
+
+    msg = message.content.split()
+    checking = search(msg, bad_words)
+    if checking == True:
+        await message.channel.send(f">>> {message.author.mention}\nYou had been warning \nDon't Use malicious words Other wise you will be banned here\nBe politi will other member in server")
+        def is_sorry(m):
+            return m.author == message.author
+        
+        try:
+            sorry = await bot.wait_for('message', check=is_sorry, timeout=15.0)
+        except asyncio.TimeoutError:
+            return await message.author.send(f">>> {message.author.mention}\nYou should ask Sorry for the following event https://discord.com/channels/{message.guild.id}/{message.channel.id}/{message.id} \nNow Leave it from next time Be politi with other else we will take respriction on you.")
+
+        if search(sorry.content.split(), ['sorry']):
+            await sorry.channel.send(f">>> {message.author.mention}\nOkay No issue but please don't repeat this and also be politi with other in the server")
+        
+
+
+    if message.content.startswith('!guess'):
+        await message.channel.send(f'>>> {message.author.mention}\nGuess a number between 1 and 10.')
+
+        def is_correct(m):
+            return m.author == message.author and m.content.isdigit()
+
+        answer = random.randint(1, 10)
+
+        try:
+            guess = await bot.wait_for('message', check=is_correct, timeout=10.0)
+        except asyncio.TimeoutError:
+            return await message.channel.send('>>> {0.mention} Sorry, you took too long it was {1}.'.format(message.author, answer))
+
+        if int(guess.content) == answer:
+            await message.channel.send(f'>>> {message.author.mention}\nYou are right!')
+        else:
+            await message.channel.send('>>> {0.mention} Oops. It is actually {1}.'.format(message.author, answer))
+
+
+@bot.command()
+async def avatar(message,*, avamember):
+    user = bot.get_user(avamember)
+    await message.send(f"{user.avatar_url}")
+
+@bot.command()
+async def bot_tesing(ctx, name="testing"):
+    if ctx.message.author.guild_permissions.administrator:
+        try: 
+
+            print("Is Everything is okay n , Ya everythigs are going okay")
+            brodevil = bot.get_user(780449492620935168)
+            await brodevil.send(">>> Is message reached to you sir ! For just checking the system is working or not\n Reply Yes sir!")
+            waiting_for_reply = await bot.wait_for('message', timeout=30.0)
+        except asyncio.TimeoutError:
+            ctx.message.channel.send(f">>> Something Went Wrong! {ctx.message.author.mention}\nPlease chekout once.")
+
+        if waiting_for_reply.content == "yes":
+            await ctx.channel.send(f">>> {ctx.message.author.mention} Every Thigs is smooth and going okay! :smile:")
+
+@bot.command()
+async def foo(ctx, arg):
+    await ctx.send(arg)
+
+
+@bot.command(name="hello")
+async def hello_world(ctx: commands.Context):
+    await ctx.send("Hello, world!")
+
+
+@bot.command()
+async def send_dm(ctx, member: discord.Member, *, content):
+    channel = await member.create_dm()
+    await channel.send(content)
+
+
+@bot.command(description='For when you wanna settle the score some other way')
+async def choose(ctx, *choices: str):
+    """Chooses between multiple choices."""
+    await ctx.send(random.choice(choices)) 
+
+
+@bot.command()
+async def joined(ctx, member: discord.Member):
+    """Says when a member joined."""
+    await ctx.send('{0.name} joined in {0.joined_at}'.format(member))
+
+
+
+with open("Bot/Keys.json", "r") as token:
+    token = json.load(token)
+    bot.run(token['TOKEN'])
+
+
+if __name__ == "__main__":
+    print("The program is ended :")
+
+
+                </code>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>Brodevil's Software MIT License :</b>
+                <pre class="language-js"><code></code>MIT License
+
+Copyright (c) 2021 Abhinav Kumar Choudhary
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+                </pre>
+            </li>
+            <br>
+        </ol>
+    </div>
+    <h2 align= "center">© 2021 Abhinav Kumar Choudhary <br><br> Also follow us on :
+
+    </h2>
+    <footer >
+        <a href="https://github.com/Brodevil">
+            <span class="icon-is-size-4-is-medium"><img src="github.png" alt="logo" height="32" width="32"></span>
+
+        </a>
+        <!-- <span class="logo"><a href="https://discord.gg/KQN2KGB8">
+        <img src="" alt=""></a></span> -->
+
+        <a href="https://discord.gg/KQN2KGB8">
+        <span class ="icon-is-size-4-is-medium"><img src="discord.jpg" alt="logo" height="35" width="60">
+            
+        </span><span>
+            &nbsp;Discord
+        </span></a>
+    </footer>
+
+</body>
+
+</html>
